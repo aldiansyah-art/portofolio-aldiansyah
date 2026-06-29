@@ -1,0 +1,29 @@
+// Membuat efek teks mengetik otomatis
+const txtElement = ['Siswa TJKT', 'Network Enthusiast', 'Aldiansyah'];
+let count = 0;
+let txtIndex = 0;
+let currentTxt = '';
+let words = '';
+
+(function ngetik() {
+    if (count == txtElement.length) {
+        count = 0;
+    }
+
+    currentTxt = txtElement[count];
+    words = currentTxt.slice(0, ++txtIndex);
+    
+    // Mengganti teks di dalam tag <span> pada HTML yang memiliki kelas khusus nantinya
+    document.querySelector('.hero h1 span').textContent = words;
+
+    if (words.length == currentTxt.length) {
+        // Jeda waktu setelah satu kata selesai diketik
+        setTimeout(() => {
+            count++;
+            txtIndex = 0;
+            setTimeout(ngetik, 500);
+        }, 1500);
+    } else {
+        setTimeout(ngetik, 100);
+    }
+})();

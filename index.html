@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Aldiansyah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header id="navbar">
+        <div class="nav-logo">PORTOFOLIO<span>.</span></div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">Profile</a>
+            <a href="#education">Pendidikan</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificates">Sertifikat</a>
+            <a href="#projects">Tugas</a>
+        </nav>
+        <div class="nav-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <p class="hero-greeting">Perkenalkan, Saya</p>
+            <h1 class="hero-name">Aldiansyah</h1>
+            <div class="hero-role">
+                <span>Fokus pada </span>
+                <span class="highlight" id="typing-text">Network Administration</span>
+            </div>
+            <p class="hero-desc">Menguasai konfigurasi perangkat Mikrotik, membangun dan mengkonfigurasi server cloud menggunakan AWS, serta implementasi keamanan jaringan. Saat ini saya sedang aktif mengerjakan tugas praktik skala kecil-menengah sebagai bagian dari pembelajaran dan persiapan memasuki dunia industri.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">Lihat Tugas</a>
+                <a href="#certificates" class="btn-secondary">Sertifikat</a>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/aldiansyah-art" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/sibedho" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-school-logo">
+                <img src="c:\Users\ASUS\Downloads\logo-wikrama.jpg" alt="SMK Wikrama Kota Bogor">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <p class="section-sub">Kenali saya lebih jauh</p>
+            <h2>about <span>ME</span></h2>
+        </div>
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="c:\Users\ASUS\Downloads\poto-aldi.jpg.png" alt="Foto Aldiansyah">
+            </div>
+            <div class="about-text">
+                <h3>perkenalkan, saya <span>Aldiansyah</span></h3>
+                <p>Saya adalah seorang siswa jurusan <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong> di SMK Wikrama Kota Bogor. Saya memiliki ketertarikan besar di bidang Network Administration, Linux Server, Cloud Computing, dan Cybersecurity.</p>
+                <p>Selama sekolah, saya aktif mempelajari bagaimana membangun, mengonfigurasi, dan mengamankan infrastruktur jaringan. Saya berkomitmen untuk terus belajar dan mengembangkan kemampuan di dunia IT.</p>
+                <div class="about-social">
+                    <a href="https://github.com/aldiansyah-art" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/sibedho" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section id="education" class="education">
+        <div class="section-header">
+            <p class="section-sub">Perjalanan akademik saya</p>
+            <h2>Riwayat <span>PENDIDIKAN</span></h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2012 - 2018</span>
+                    <h3>SDN Caringin 03</h3>
+                    <p>Pendidikan tingkat dasar dengan fokus pembangunan karakter dan dasar ilmu pengetahuan.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2018 - 2021</span>
+                    <h3>MTS Al Istiqomah</h3>
+                    <p>Pendidikan menengah pertama dengan pembekalan nilai akademik dan karakter islami.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2021 - Sekarang</span>
+                    <h3>SMK Wikrama Kota Bogor</h3>
+                    <p>Mengambil Program Keahlian <strong>Teknik Jaringan Komputer & Telekomunikasi (TJKT)</strong>. Mendalami administrasi jaringan, Linux server, cloud computing, dan keamanan siber.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <p class="section-sub">Teknologi yang saya kuasai</p>
+            <h2>Skills <span>&amp; TOOLS</span></h2>
+        </div>
+        <div class="skills-track-wrapper">
+            <div class="skills-track">
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                    <span>Linux</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+                    <span>AWS</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Mikrotik_logo.png/200px-Mikrotik_logo.png" alt="Mikrotik">
+                    <span>Mikrotik</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="Debian">
+                    <span>Debian</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="Ubuntu">
+                    <span>Ubuntu</span>
+                </div>
+                <!-- duplikat untuk scroll -->
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                    <span>Linux</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+                    <span>AWS</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Mikrotik_logo.png/200px-Mikrotik_logo.png" alt="Mikrotik">
+                    <span>Mikrotik</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="Debian">
+                    <span>Debian</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="Ubuntu">
+                    <span>Ubuntu</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERTIFIKAT -->
+    <section id="certificates" class="certificates">
+        <div class="section-header">
+            <p class="section-sub">Pencapaian sertifikasi saya</p>
+            <h2>My <span>SERTIFIKAT</span></h2>
+        </div>
+        <div class="grid-3">
+            <div class="card" onclick="bukaGambar('Sertificate 1.jpg','Sertifikasi Kursus Pengenalan Cybersecurity')">
+                <div class="card-img"><img src="Sertificate 1.jpg" alt="Sertifikat 1"><div class="overlay">&#128269; Lihat</div></div>
+                <div class="card-info"><p>Sertifikasi Kursus Pengenalan Cybersecurity</p></div>
+            </div>
+            <div class="card" onclick="bukaGambar('Sertificate 2.jpg','Sertifikasi Kursus Belajar Cisco Dasar')">
+                <div class="card-img"><img src="Sertificate 2.jpg" alt="Sertifikat 2"><div class="overlay">&#128269; Lihat</div></div>
+                <div class="card-info"><p>Sertifikasi Kursus Belajar Cisco Dasar</p></div>
+            </div>
+            <div class="card" onclick="bukaGambar('Sertificate 3.jpg','Sertifikasi Pengenalan Cybersecurity')">
+                <div class="card-img"><img src="Sertificate 3.jpg" alt="Sertifikat 3"><div class="overlay">&#128269; Lihat</div></div>
+                <div class="card-info"><p>Sertifikasi Pengenalan Cybersecurity</p></div>
+            </div>
+            <div class="card" onclick="bukaGambar('sertificate 4.jpg','Sertifikasi Kursus Belajar Linux')">
+                <div class="card-img"><img src="sertificate 4.jpg" alt="Sertifikat 4"><div class="overlay">&#128269; Lihat</div></div>
+                <div class="card-info"><p>Sertifikasi Kursus Belajar Linux</p></div>
+            </div>
+            <div class="card" onclick="bukaGambar('Sertificate 5.jpg','Nama Sertifikat 5')">
+                <div class="card-img"><img src="c:\Users\ASUS\Downloads\sertificate-5_page-0001.jpg" alt="Sertifikat 5"><div class="overlay">&#128269; Lihat</div></div>
+                <div class="card-info"><p>Sertificate pemahaman keamanan Cybersecurity</p></div>
+            </div>
+            <div class="card" onclick="bukaGambar('Sertificate 6.jpg','Nama Sertifikat 6')">
+                <div class="card-img"><img src="" alt="Sertifikat 6"><div class="overlay">&#128269; Lihat</div></div>
+                <div class="card-info"><p>Nama Sertifikat 6</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TUGAS -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <p class="section-sub">Dokumentasi hasil belajar saya</p>
+            <h2>Tugas <span>&amp; PROJEK</span></h2>
+        </div>
+        <div class="folder-grid">
+            <!-- LINUX -->
+            <div class="folder-section">
+                <div class="folder-card" onclick="toggleFolder('linux', this)">
+                    <div class="folder-icon">🐧</div>
+                    <div class="folder-name">Linux</div>
+                    <div class="folder-count">8 Tugas</div>
+                </div>
+                <div id="folder-linux" class="folder-content">
+                    <a href="linux/Dokumentasi Superlab ASJ - Debian 10 (3) aldiansyah 12410160.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">Dokumentasi Superlab ASJ - Debian 10</p>
+                            <p class="tugas-desc">Konfigurasi layanan jaringan pada Debian 10 dalam lingkungan laboratorium virtual.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="linux/LKPD Linux 1 - NAT Gateway (3) aldiansyah 12410160.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">LKPD Linux 1 - NAT Gateway</p>
+                            <p class="tugas-desc">Konfigurasi NAT Gateway pada Linux untuk menghubungkan jaringan lokal ke internet.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="linux/LKPD Linux 2 - DHCP & DNS Server aldiansyah 12410160.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">LKPD Linux 2 - DHCP &amp; DNS Server</p>
+                            <p class="tugas-desc">Instalasi DHCP dan DNS Server pada Linux untuk manajemen alamat IP otomatis.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="linux/LKPD Linux 3 - SFTP Server (3) aldiansyah 12410160.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">LKPD Linux 3 - SFTP Server</p>
+                            <p class="tugas-desc">Membangun SFTP Server untuk transfer file aman menggunakan protokol SSH.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="linux/LKPD Linux 4 - SAMBA Server aldiansyah 12410160.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">LKPD Linux 4 - SAMBA Server</p>
+                            <p class="tugas-desc">Konfigurasi SAMBA Server untuk berbagi file antara Linux dan Windows.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="linux/LKPD Linux 5 - Web Server aldiansyah.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">LKPD Linux 5 - Web Server</p>
+                            <p class="tugas-desc">Instalasi Apache Web Server pada Linux untuk hosting website lokal.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="linux/LKPD Linux 6 - Mail Server aldiansyah 12410160.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">LKPD Linux 6 - Mail Server</p>
+                            <p class="tugas-desc">Membangun Mail Server menggunakan Postfix dan Dovecot untuk pengelolaan email lokal.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="linux/LKPD Linux 7 - Automation Ansible 2026 (3) aldiansyah.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">LKPD Linux 7 - Automation Ansible</p>
+                            <p class="tugas-desc">Otomasi konfigurasi server menggunakan Ansible untuk efisiensi manajemen infrastruktur.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- MIKROTIK -->
+            <div class="folder-section">
+                <div class="folder-card" onclick="toggleFolder('mikrotik', this)">
+                    <div class="folder-icon">🔧</div>
+                    <div class="folder-name">Mikrotik</div>
+                    <div class="folder-count">3 Tugas</div>
+                </div>
+                <div id="folder-mikrotik" class="folder-content">
+                    <a href="mikrotik/REVISI DOKUMENTASI ASAT PRAKTIK KK TKJ 2026 - aldiansyah (1).docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">Revisi Dokumentasi ASAT KK TKJ 2026</p>
+                            <p class="tugas-desc">Dokumentasi revisi praktik akhir semester mencakup konfigurasi jaringan Mikrotik menyeluruh.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="mikrotik/Dokumentasi Mikrotik-1.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">Dokumentasi Mikrotik - 1</p>
+                            <p class="tugas-desc">Konfigurasi dasar Mikrotik RouterOS meliputi routing, firewall, dan manajemen bandwidth.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="mikrotik/Dokumentasi Mikrotik-2 aldiansyah 12410160.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">Dokumentasi Mikrotik - 2</p>
+                            <p class="tugas-desc">Konfigurasi lanjutan Mikrotik meliputi VLAN, hotspot, dan manajemen user jaringan.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- AWS -->
+            <div class="folder-section">
+                <div class="folder-card" onclick="toggleFolder('aws', this)">
+                    <div class="folder-icon">☁️</div>
+                    <div class="folder-name">AWS</div>
+                    <div class="folder-count">2 Tugas</div>
+                </div>
+                <div id="folder-aws" class="folder-content">
+                    <a href="aws/REVISI DOKUMENTASI ASAT PRAKTIK KK TKJ 2026 - aldiansyah (1).docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">Revisi Dokumentasi ASAT KK TKJ 2026</p>
+                            <p class="tugas-desc">Dokumentasi praktik akhir semester mencakup konfigurasi infrastruktur cloud AWS.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="aws/LK Cloud 3.1 - Build AWS VPC & Launch EC2 Instance aldiansyah 12410160.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">LK Cloud 3.1 - Build AWS VPC &amp; EC2</p>
+                            <p class="tugas-desc">Membangun Virtual Private Cloud dan meluncurkan EC2 Instance di AWS.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CYBERSECURITY -->
+            <div class="folder-section">
+                <div class="folder-card" onclick="toggleFolder('cyber', this)">
+                    <div class="folder-icon">🔒</div>
+                    <div class="folder-name">Cybersecurity</div>
+                    <div class="folder-count">4 Tugas</div>
+                </div>
+                <div id="folder-cyber" class="folder-content">
+                    <a href="Cybersecurity/Jobsheet7 (1) aldiansyah 12410160.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">Jobsheet 7 - Cybersecurity</p>
+                            <p class="tugas-desc">Praktik keamanan siber lanjutan meliputi analisis kerentanan dan pengamanan sistem jaringan.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="Cybersecurity/Jobsheet8 aldiansyah 12410160.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">Jobsheet 8 - Cybersecurity</p>
+                            <p class="tugas-desc">Implementasi keamanan jaringan, enkripsi data, dan monitoring ancaman pada infrastruktur IT.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="Cybersecurity/LKPD 1 Cybersecurity aldiansyah.docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">LKPD 1 - Cybersecurity</p>
+                            <p class="tugas-desc">Pembelajaran dasar keamanan siber meliputi konsep ancaman dan langkah perlindungan sistem.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                    <a href="Cybersecurity/LKPD Cybersecurity ke 3 aldiansyah 12410160 (1).docx" class="card tugas-card">
+                        <div class="card-img tugas-img"><span>&#128196;</span></div>
+                        <div class="card-info">
+                            <p class="tugas-judul">LKPD 3 - Cybersecurity</p>
+                            <p class="tugas-desc">Praktik lanjutan mencakup penetration testing dasar dan mitigasi risiko keamanan jaringan.</p>
+                            <span class="klik-hint">&#128065; Klik untuk buka</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" onclick="tutupGambar()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <span class="lightbox-close" onclick="tutupGambar()">&#10005;</span>
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Aldiansyah. All Rights Reserved.</p>
+        <div class="footer-social">
+            <a href="https://github.com/aldiansyah-art" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/sibedho" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Folder accordion
+        function toggleFolder(id, el) {
+            const content = document.getElementById('folder-' + id);
+            const isOpen = content.classList.contains('open');
+            // tutup semua
+            document.querySelectorAll('.folder-content').forEach(e => e.classList.remove('open'));
+            document.querySelectorAll('.folder-card').forEach(e => e.classList.remove('active'));
+            // buka yang diklik kalau belum open
+            if (!isOpen) {
+                content.classList.add('open');
+                el.classList.add('active');
+            }
+        }
+
+        // Typing effect
+        const texts = ["Network Administration", "Linux Server", "Cybersecurity", "Cloud Computing"];
+        let i = 0, j = 0, del = false;
+        function type() {
+            const el = document.getElementById('typing-text');
+            if (!el) return;
+            if (!del) {
+                el.textContent = texts[i].substring(0, j++);
+                if (j > texts[i].length) { del = true; setTimeout(type, 1500); return; }
+            } else {
+                el.textContent = texts[i].substring(0, j--);
+                if (j < 0) { del = false; i = (i + 1) % texts.length; }
+            }
+            setTimeout(type, del ? 50 : 100);
+        }
+        type();
+
+        // Lightbox
+        function bukaGambar(src, caption) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = caption;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function tutupGambar() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        // Mobile menu
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
